@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">JavaScript</a>
+    </div>
+	</div>
+</nav>
+  
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+     <p><a href="index.html" class="active">HOME</a></p>
+      <p><a href="jsintro.html">INTRODUCTION</a></p>
+      <p><a href="where.html">WHERE TO</a></p>
+	  <p>OUTPUT</p>
+      <p><a href="jssyntax.html">SYNTAX</a></p>
+	  <p><a href="jsstatement.html">STATEMENTS</a></p>
+	  <p><a href="jsvariable.html">VARIABLES</a></p>
+	  <p><a href="#">OPERATORS</a></p>
+          <p><a href="#">ARITHMATICS</a></p>
+	  <p><a href="assignment.html">ASSIGNMENT</a></p>
+          <p><a href="datatypes.html">DATA TYPES</a></p>
+	  <p><a href="function.hml">FUNCTIONS</a></p>
+	  <p><a href="objects.html">OBJECTS</a></p>
+	  <p><a href="scope.html">SCOPE</a></p>
+	  <p><a href="events.html">EVENTS</a></p>
+          <p><a href="strings.hml">STRINGS</a></p>
+	  <p><a href="stringmethods.html">STRIND METHODS</a></p>
+	  <p><a href="numbers.html">NUMBERS</a></p>
+	  <p><a href="numbermethod.html">NUMBER METHODS</a></p>
+          <p><a href="jsmath.html">MATH</a></p>
+	  <p><a href="random.html">RANDOM</a></p>
+    </div>
+    <div class="col-sm-8 text-left"> 
+      <h1>JavaScript Output</h1>
+		<h2>JavaScript Display Possibilities</h2>
+		<p>JavaScript can "display" data in different ways:</p>
+                <ul>
+                    <li>Writing into an HTML element, using innerHTML.</li>
+                    <li>Writing into the HTML output using document.write().</li>
+                    <li>Writing into an alert box, using window.alert().</li>
+                    <li>Writing into the browser console, using console.log().</li>
+                </ul>
+        <h3>Using innerHTML</h3>
+        <p>To access an HTML element, JavaScript can use the document.getElementById(id) method.</p>
+
+        <p>The id attribute defines the HTML element. The innerHTML property defines the HTML content:</p>
+      <hr>
+      <h3>Example</h3>
+      
+            <h3> Syntax</h3>
+            &lt;!DOCTYPE html&gt;<br />
+&lt;html&gt;<br />
+&lt;body&gt;<br />
+<br />
+&lt;h2&gt;My First Web Page&lt;/h2&gt;<br />
+&lt;p&gt;My First Paragraph.&lt;/p&gt;<br />
+<br />
+&lt;p id="demo"&gt;&lt;/p&gt;<br />
+<br />
+&lt;script&gt;<br />
+document.getElementById("demo").innerHTML = 5 + 6;<br />
+&lt;/script&gt;<br />
+<br />
+&lt;/body&gt;<br />
+&lt;/html&gt; <br />
+<br />
+
+		<hr>
+                <h3>Result</h3>
+                <!DOCTYPE html>
+<html>
+<body>
+
+<h2>My First Web Page</h2>
+<p>My First Paragraph.</p>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = 5 + 6;
+</script>
+
+</body>
+</html> 
+
+                
+    </div>
+	</div>
+	</div>
+</body>
+</html>

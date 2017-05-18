@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">JavaScript</a>
+    </div>
+	</div>
+</nav>
+  
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+      <p><a href="index.html" class="active">HOME</a></p>
+      <p><a href="jsintro.html">INTRODUCTION</a></p>
+      <p><a href="where.html">WHERE TO</a></p>
+	  <p><a href="output.html">OUTPUT</a></p>
+      <p><a href="jssyntax.html">SYNTAX</a></p>
+	  <p><a href="jsstatement.html">STATEMENTS</a></p>
+	  <p><a href="jsvariable.html">VARIABLES</a></p>
+	  <p><a href="#">OPERATORS</a></p>
+          <p><a href="#">ARITHMATICS</a></p>
+	  <p><a href="assignment.html">ASSIGNMENT</a></p>
+          <p><a href="datatypes.html">DATA TYPES</a></p>
+	  <p><a href="function.hml">FUNCTIONS</a></p>
+	  <p><a href="objects.html">OBJECTS</a></p>
+	  <p>SCOPE</p>
+	  <p><a href="events.html">EVENTS</a></p>
+          <p><a href="strings.hml">STRINGS</a></p>
+	  <p><a href="stringmethods.html">STRIND METHODS</a></p>
+	  <p><a href="numbers.html">NUMBERS</a></p>
+	  <p><a href="numbermethod.html">NUMBER METHODS</a></p>
+          <p><a href="jsmath.html">MATH</a></p>
+	  <p><a href="random.html">RANDOM</a></p>
+    </div>
+    <div class="col-sm-8 text-left"> 
+      <h1>JavaScript Scope</h1>
+		<p>Scope is the set of variables you have access to.</p>
+                <h2>JavaScript Scope</h2>
+                <p>In JavaScript, objects and functions are also variables.</p>
+
+                <p>In JavaScript, scope is the set of variables, objects, and functions you have access to.</p>
+
+                <p>JavaScript has function scope: The scope changes inside functions.</p>
+                <h2>Local JavaScript Variables</h2>
+                <p>Variables declared within a JavaScript function, become LOCAL to the function.</p>
+
+                <p>Local variables have local scope: They can only be accessed within the function.</p>
+      <hr>
+      <h3>Example</h3>
+      
+            <h3> Syntax</h3>
+            &lt;!DOCTYPE html&gt;<br />
+&lt;html&gt;<br />
+&lt;body&gt;<br />
+<br />
+&lt;p&gt;The local variable carName cannot be accessed from code outside the function:&lt;/p&gt;<br />
+<br />
+&lt;p id="demo"&gt;&lt;/p&gt;<br />
+<br />
+&lt;script&gt;<br />
+myFunction();<br />
+document.getElementById("demo").innerHTML =<br />
+"The type of carName is " + typeof carName;<br />
+<br />
+function myFunction() {<br />
+    var carName = "Volvo";<br />
+}<br />
+&lt;/script&gt;<br />
+<br />
+&lt;/body&gt;<br />
+&lt;/html&gt;<br />
+<br />
+<br />
+<br />
+		<hr>
+               <!DOCTYPE html>
+<html>
+<body>
+
+<p>The local variable carName cannot be accessed from code outside the function:</p>
+
+<p id="demo"></p>
+
+<script>
+myFunction();
+document.getElementById("demo").innerHTML =
+"The type of carName is " + typeof carName;
+
+function myFunction() {
+    var carName = "Volvo";
+}
+</script>
+
+</body>
+</html>
+
+                 <hr>
+                 <p>Since local variables are only recognized inside their functions, variables with the same name can be used in different functions.</p>
+
+                 <p>Local variables are created when a function starts, and deleted when the function is completed.</p>
+                 <h3>Global JavaScript Variables</h3>
+                 <p>A variable declared outside a function, becomes GLOBAL.</p>
+
+                 <p>A global variable has global scope: All scripts and functions on a web page can access it.</p>
+                 <h3>Automatically Global</h3>
+                 <p>If you assign a value to a variable that has not been declared, it will automatically become a GLOBAL variable.</p>
+
+                 <p>This code example will declare a global variable carName, even if the value is assigned inside a function.</p>
+                 <p>Do NOT create global variables unless you intend to.</p>
+
+                 <p>In "Strict Mode" automatically global variables will fail.</p>
+                 <h3>Global Variables in HTML</h3>
+                 <p> With JavaScript, the global scope is the complete JavaScript environment.</p>
+
+                 <p>In HTML, the global scope is the window object. All global variables belong to the window object.</p>
+    </div>
+      
+	</div>
+	</div>
+</body>
+</html>

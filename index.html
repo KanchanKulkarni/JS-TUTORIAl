@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">JavaScript</a>
+    </div>
+	</div>
+</nav>
+  
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+      <p><a href="index.html" class="active">HOME</a></p>
+      <p><a href="jsintro.html">INTRODUCTION</a></p>
+      <p><a href="where.html">WHERE TO</a></p>
+	  <p><a href="output.html">OUTPUT</a></p>
+      <p><a href="jssyntax.html">SYNTAX</a></p>
+	  <p><a href="jsstatement.html">STATEMENTS</a></p>
+	  <p><a href="jsvariable.html">VARIABLES</a></p>
+	  <p><a href="#">OPERATORS</a></p>
+          <p><a href="#">ARITHMATICS</a></p>
+	  <p><a href="assignment.html">ASSIGNMENT</a></p>
+          <p><a href="datatypes.html">DATA TYPES</a></p>
+	  <p><a href="function.hml">FUNCTIONS</a></p>
+	  <p><a href="objects.html">OBJECTS</a></p>
+	  <p><a href="scope.html">SCOPE</a></p>
+	  <p><a href="events.html">EVENTS</a></p>
+          <p><a href="strings.hml">STRINGS</a></p>
+	  <p><a href="stringmethods.html">STRIND METHODS</a></p>
+	  <p><a href="numbers.html">NUMBERS</a></p>
+	  <p><a href="numbermethod.html">NUMBER METHODS</a></p>
+          <p><a href="jsmath.html">MATH</a></p>
+	  <p><a href="random.html">RANDOM</a></p>
+    </div>
+    <div class="col-sm-8 text-left"> 
+      <h1>JavaScript Tutorial</h1>
+		<p>JavaScript is the programming language of HTML and the Web.</p>
+		<p>JavaScript is easy to learn.</p>
+        <p>This tutorial will teach you JavaScript from basic to advanced.</p>
+      <hr>
+      <h3>Example</h3>
+      <p>With examples you can get to know how javascript works</p>
+            <h3> Syntax</h3>
+            &lt;!DOCTYPE html&gt; <br>
+            &lt;html&gt; <br>
+            &lt;body&gt; <br>
+
+            &lt;h2&gt;My First JavaScript&lt;/h2&gt; <br>
+
+            &lt;button type=&quot;button&quot;<br>
+            onclick=&quot;document.getElementById(&apos;demo&apos;).innerHTML = Date()&quot;&gt;<br>
+            Click me to display Date and Time.&lt;/button&gt;<br>
+
+            &lt;p id=&quot;demo&quot;&gt;&lt;/p&gt;<br>
+
+            &lt;/body&gt;<br>
+            &lt;/html&gt; <br>
+	
+		<hr>
+                <h3>Result</h3>
+                <!DOCTYPE html>
+                <html>
+                 <body>
+
+                  <h2>My First JavaScript</h2>
+
+                   <button type="button"
+                   onclick="document.getElementById('demo').innerHTML = Date()">
+                    Click me to display Date and Time.</button>
+
+                   <p id="demo"></p>
+                 </body>
+
+                 </html> 
+                 <hr>
+		<h2>Why Study JavaScript?</h2>
+		<p>JavaScript is one of the 3 languages all web developers must learn:</p>
+		<ol>
+             <li>HTML to define the content of web pages</li>
+             <li>CSS to specify the layout of web pages</li>
+             <li>JavaScript to program the behavior of web pages</li>
+        </ol> 
+		<p>This tutorial is about JavaScript, and how JavaScript works with HTML and CSS.</p>
+		<hr>
+    </div>
+	</div>
+	</div>
+</body>
+</html>
